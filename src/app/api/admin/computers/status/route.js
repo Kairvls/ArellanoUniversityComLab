@@ -7,6 +7,7 @@ export async function POST(req) {
   await db.query("INSERT INTO student_usage (lab, pc_number, lrn) VALUES (?, ?, ?)", [lab, pc_number, lrn]);
   
   return NextResponse.json({ message: "Status Updated" });
+  
 }
 export async function GET() {
   const [rows] = await db.query("SELECT u.lab, u.pc_number, s.lrn FROM student_usage u JOIN students s ON u.lrn = s.lrn");
