@@ -101,7 +101,7 @@ export default function AdminLogin() {
                                             <button
                                                 type="button"
                                                 onClick={() => setShowPassword(!showPassword)} 
-                                                className="absolute mt-[70px] ml-[-30px] top-[23rem] transform -translate-y-1/2"
+                                                className="absolute mt-[70px] ml-[-30px] top-[23.5rem] transform -translate-y-1/2"
                                             >
                                                 {showPassword ? <AiFillEyeInvisible size={20} /> : <AiFillEye size={20} />}
                                             </button>
